@@ -1,0 +1,24 @@
+{
+  "name": "zhiban-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A self-hosted personal agent with source-bound memory and a neutral companion blueprint.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js",
+    "audit:public": "python scripts/audit_public.py"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "chromadb": "^3.5.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "yaml": "^2.8.2"
+  },
+  "license": "MIT"
+}

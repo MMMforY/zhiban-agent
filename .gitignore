@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+.local/
+*.db
+*.db-*
+*.sqlite*
+*.log
+*.pem
+*.key
+*.p12
+coverage/
+blueprint-private/
+local.config.json

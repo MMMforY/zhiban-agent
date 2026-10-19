@@ -1,0 +1,5 @@
+agent:
+  name: 知伴
+  continuity_id: companion-example-001
+blueprint:
+  version: 1.0.0

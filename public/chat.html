@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>知伴 · 对话</title><link rel="stylesheet" href="/chat.css"></head>
+<body><main><header><span>PERSONAL AGENT</span><h1>知伴</h1><p>在对话里理解，在记忆里留下依据。</p><a href="/">查看记忆星图 ↗</a></header>
+<details><summary>连接设置</summary><label>运行时访问令牌（不是模型 API Key）<input id="token" type="password" autocomplete="off"></label><p>仅在你设置了 API_AUTH_TOKEN 时填写；不写入浏览器存储。模型在服务端 .env 中配置。</p></details>
+<p id="status" role="status">正在检查本机服务…</p><section id="messages" aria-live="polite" aria-label="对话"></section>
+<form id="chat"><label for="message">想聊些什么？</label><textarea id="message" maxlength="12000" rows="4" required></textarea><label class="option"><input id="memory" type="checkbox">提取本轮记忆（额外模型调用）</label><div class="actions"><button type="button" id="new">新对话</button><button id="send">发送</button></div></form>
+<footer>记录保存在你运行服务的设备。对话与相关记忆会发送至你配置的模型服务；新对话不会删除历史。</footer></main><script src="/chat.js" defer></script></body></html>
